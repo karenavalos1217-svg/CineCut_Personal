@@ -5,7 +5,6 @@ require('dotenv').config();
 
 router.post('/register', authControllers.register);
 
-// Mock de test (puedes borrarlo si no lo quieres)
 router.get('/test', async (req, res) => {
   try {
     const users = [
