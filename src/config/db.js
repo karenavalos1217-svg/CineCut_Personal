@@ -6,7 +6,7 @@ const sequelize = new Sequelize({
   username: process.env.DB_USER,
   // si DB_PASSWORD está vacío, no se envía password (evita "using password: YES")
   password: process.env.DB_PASSWORD && process.env.DB_PASSWORD.length ? process.env.DB_PASSWORD : undefined,
-  host: process.env.DB_HOST || '127.0.0.1',
+  host: process.env.DB_HOST || 'localhost',
   port: Number(process.env.DB_PORT || 3306),
   dialect: 'mysql',
   logging: false,
